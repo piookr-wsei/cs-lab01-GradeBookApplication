@@ -38,19 +38,19 @@ namespace GradeBook.GradeBooks
 
             double percentile = percentage * grades.IndexOf(averageGrade);
 
-            if(percentile >= 0.8)
+            if(percentile >= 80)
             {
                 return 'A';
             }
-            else if(percentile >= 0.6)
+            else if(percentile >= 60)
             {
                 return 'B';
             }
-            else if(percentile >= 0.4)
+            else if(percentile >= 40)
             {
                 return 'C';
             }
-            else if(percentile >= 0.2)
+            else if(percentile >=20)
             {
                 return 'D';
             }
