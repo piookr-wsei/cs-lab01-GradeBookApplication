@@ -1,14 +1,14 @@
 ﻿using GradeBook.Enums;
-using GradeBook.GradeBooks;
+using GradeBook.GradeBooks.Interface;
 using System;
 
 namespace GradeBook.UserInterfaces
 {
     public static class GradeBookUserInterface
     {
-        public static BaseGradeBook GradeBook;
+        public static IGradeBook GradeBook;
         public static bool Quit = false;
-        public static void CommandLoop(BaseGradeBook gradeBook)
+        public static void CommandLoop(IGradeBook gradeBook)
         {
             GradeBook = gradeBook;
             Quit = false;
