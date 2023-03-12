@@ -8,6 +8,7 @@ namespace GradeBook.GradeBooks.Interface
     public interface IGradeBook
     {
         public string Name { get; set; }
+        public bool IsWeighted { get; set; }
         public GradeBookType Type { get; set; }
         public List<Student> Students { get; set; }
 
